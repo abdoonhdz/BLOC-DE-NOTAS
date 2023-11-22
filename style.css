@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    height: 100vh;
+    background: lightcoral;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 150px;
+    background-color: lightgreen;
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.5rem rgb(87, 87, 87));
+}
+
+.nota {
+    margin-left: 2rem;
+    margin-top: 10rem;
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    filter: drop-shadow(0 0 0.5rem rgb(87, 87, 87));
+}
+
+.eliminar {
+    display: flex;
+    width: 100%;
+    background-color: lightgreen;
+    height: 50px;
+    align-items: center;
+    justify-content: end;
+}
+
+.eliminar i {
+    color: black;
+    padding-right: 20px;
+    transition: .3s ease-in-out;
+}
+
+.eliminar i:hover {
+    cursor: pointer;
+    transform: rotateX(30deg);
+}
+
+.escribir {
+    width: 99.9%;
+    height: 400px;
+    resize: none;
+    border: none;
+    font-size: 20px;
+}
